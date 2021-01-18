@@ -1,4 +1,39 @@
-# Getting Started with Create React App
+# Chikkamagaluru  Website (chikkamagaluru.org)
+
+
+### Project Info
+
+This project uses [React.Js](https://reactjs.org) and the contents are bundled using webpack.
+
+The contents in this project follow the following structure.
+
+```
+├───public
+│   └───images
+│
+└───src
+    ├──sections
+    │   ├───about
+    │   ├───faq
+    │   ├───footer
+    │   ├───landing
+    │   ├───schedule
+    │   ├───speakers
+    │   └───sponsors
+    │
+    │
+    └───shared_components
+        ├───button
+        └───sidebar
+```
+
+Each individual section and component, follows this structure
+
+```
+section
+  ├──components
+  └──styles
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -39,32 +74,36 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Setup
+
+##### Clone the repository
+
+```bash
+git clone https://github.com/sanket9006/chikkamagaluru.org.git
+```
+
+##### Move to the desired folder
+
+```bash
+cd \chikkamagaluru.org
+```
+
+##### To install the dependencies, simply write
+
+```bash
+yarn install
+```
+
+##### To run the app, simply write
+
+```bash
+yarn start
+```
+
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,4 +1,6 @@
 import React from "react";
+import './Home.css'
+import { Button, Jumbotron } from 'react-bootstrap';
 
 function Home() {
   return (
@@ -22,6 +24,22 @@ function Home() {
             </p>
           </div>
         </div>
+      </div>
+
+      <div class="container-custom container">
+        <Jumbotron>
+          <h2>Volunteer Registration</h2>
+          <p>
+          Volunteer registration forms are the documents that organizations 
+          provide their applicants when they execute volunteer recruitment
+          Join The Global Movement Of Young Leaders Developing Innovative Solutions. 
+          Learn More! Rotary Is 1.2 Million Passionate Individuals In 35,000+ Clubs Worldwide. 
+          Learn About Our Causes. Highlights: Donation Option Available, Press Center Available.
+          </p>
+          <p>
+            <Button variant="primary">Join Today</Button>
+          </p>
+        </Jumbotron>
       </div>
     </div>
   );
