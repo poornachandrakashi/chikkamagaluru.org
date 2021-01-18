@@ -26,7 +26,7 @@ function Home() {
         </div>
       </div>
 
-      <div class="container">
+      <div class="container-custom container">
         <Jumbotron>
           <h2>Volunteer Registration</h2>
           <p>

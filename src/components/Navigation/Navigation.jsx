@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { Button, Form } from 'react-bootstrap';
-import './Navigation.css'
+import './styles/Navigation.css'
 
 function Navigation(props) {
   return (
@@ -14,9 +14,9 @@ function Navigation(props) {
 
           <div>
             <ul class="navbar-nav ml-auto">
-              <li
-                class={`nav-item  ${props.location.pathname === "/" ? "active" : ""
-                  }`}
+              <li 
+                class={`nav-item ${props.location.pathname === "/" ? "active" : ""
+                  }`} 
               >
                 <Link class="nav-link" to="/">
                   Home
