@@ -1,0 +1,29 @@
+.Hero {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.Hero-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+}
+
+@media (min-width: 650px ) {
+    .Hero {
+        background-position: center center;
+    }
+
+    .Hero-content {
+        align-items: flex-end;
+        justify-content: x;
+        align-items: stretch;
+        
+    }
+}
+
