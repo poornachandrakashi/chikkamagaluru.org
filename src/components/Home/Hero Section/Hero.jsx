@@ -6,7 +6,7 @@ import mobileImage from '../../../Images-Videos-GIF/chikkamagaluru-mobile.jpg';
 import './Hero.css';
 
 const Hero = () => {
-    const imageUrl = window.innerWidth >= 1081 ? desktopImage : mobileImage;
+    const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;
 
     return (
         <div className="Hero" style={{ backgroundImage: `url(${imageUrl})` }}>
