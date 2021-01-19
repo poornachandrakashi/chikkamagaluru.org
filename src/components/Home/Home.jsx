@@ -3,7 +3,6 @@ import './Home.css'
 import { Button, Jumbotron } from 'react-bootstrap';
 import nature from '../../Images-Videos-GIF/nature.mp4'
 import coffee from '../../Images-Videos-GIF/coffee.mp4'
-import Header from './Hero Section/Hero'
 import Hero from "./Hero Section/Hero";
 
 function Home() {
@@ -50,7 +49,7 @@ function Home() {
       </div>
 
 
-      <div className="container-custom container">
+      <div className="container">
         <div className="row align-items-center my-5">
           <div className="col-lg-5 align-items-center">
             <div className="container align-items-center">
