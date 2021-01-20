@@ -1,7 +1,8 @@
 import './App.css';
 
 // Importing Shared Components
-import Navigation  from './shared-components/Navigation/NewNavigation'
+//import Navigation  from './shared-components/Navigation/NewNavigation'
+import Navigation  from './shared-components/Navigation/Navigation'
 import Footer from './shared-components/Footer/Footer'
 
 // Importing Components
@@ -22,10 +23,11 @@ function App() {
     <Router>
       <Navigation />
       <Switch>
-        <Route path="/" exact component={() => <Home />} />
+        <Route exact path="/"  component={() => <Home />} />
         <Route path="/about" exact component={() => <About />} />
         <Route path="/contact" exact component={() => <Contact />} />
         <Route path="/services" exact component={() => <Contact />} />
+        <Route path="/signin" exact component={() => <Contact />} />
         <Redirect from="*" to="/" />
       </Switch>
       <Footer />
