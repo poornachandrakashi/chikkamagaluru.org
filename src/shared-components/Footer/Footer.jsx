@@ -13,13 +13,13 @@ function Footer() {
               <h3>Things to do</h3>
               <ul>
                 <li>
-                  <a href="#">A</a>
+                  <a href="https://chikkamagaluru.org/">A</a>
                 </li>
                 <li>
-                  <a href="#">B</a>
+                  <a href="https://chikkamagaluru.org/">B</a>
                 </li>
                 <li>
-                  <a href="#">C</a>
+                  <a href="https://chikkamagaluru.org/">C</a>
                 </li>
               </ul>
             </div>
@@ -27,13 +27,13 @@ function Footer() {
               <h3>Things to know</h3>
               <ul>
                 <li>
-                  <a href="#">A</a>
+                  <a href="https://chikkamagaluru.org/">A</a>
                 </li>
                 <li>
-                  <a href="#">B</a>
+                  <a href="https://chikkamagaluru.org/">B</a>
                 </li>
                 <li>
-                  <a href="#">C</a>
+                  <a href="https://chikkamagaluru.org/">C</a>
                 </li>
               </ul>
             </div>
@@ -41,13 +41,13 @@ function Footer() {
               <h3>Community</h3>
               <ul>
                 <li>
-                  <a href="#">A</a>
+                  <a href="https://chikkamagaluru.org/">A</a>
                 </li>
                 <li>
-                  <a href="#">B</a>
+                  <a href="https://chikkamagaluru.org/">B</a>
                 </li>
                 <li>
-                  <a href="#">C</a>
+                  <a href="https://chikkamagaluru.org/">C</a>
                 </li>
               </ul>
             </div>
@@ -62,13 +62,13 @@ function Footer() {
               </p>
             </div>
             <div className="col item social">
-              <a href="#">
+              <a href="https://chikkamagaluru.org/">
                 <AiFillFacebook/>
               </a>
-              <a href="#">
+              <a href="https://chikkamagaluru.org/">
                 <AiOutlineTwitter/>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/chikkamagaluru/">
                 <AiFillInstagram/>
               </a>
             </div>
