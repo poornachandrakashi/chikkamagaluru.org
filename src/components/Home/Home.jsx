@@ -10,7 +10,7 @@ function Home() {
     <div className="home">
       <Hero />
       <div className="container">
-        <div className="row align-items-center my-5">
+        <div className="row align-items-center my-4">
           <div className="col-lg-5 align-items-center">
             <div className="container align-items-center">
               <video className='videoTag' autoPlay loop muted height="350" width="350">
