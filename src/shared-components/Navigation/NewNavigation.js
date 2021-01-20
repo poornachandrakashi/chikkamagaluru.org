@@ -18,20 +18,9 @@ const Navbar = () => {
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to='/' exact activeStyle>
-            Home
-          </NavLink>
-          <NavLink to='/about' activeStyle>
-            About
-          </NavLink>
-          <NavLink to='/services' activeStyle>
-            Services
-          </NavLink>
-          <NavLink to='/contact' activeStyle>
-            Contact
-          </NavLink>
-          {/* Second Nav */}
-          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+          <NavLink to='/' exact activeStyle>    Home     </NavLink>
+          <NavLink to='/about' activeStyle>     About    </NavLink>
+          <NavLink to='/services' activeStyle>  Services </NavLink>
         </NavMenu>
         <NavBtn>
           <NavBtnLink to='/signin'>Sign In</NavBtnLink>
