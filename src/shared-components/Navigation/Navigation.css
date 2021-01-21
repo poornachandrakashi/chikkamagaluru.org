@@ -13,9 +13,15 @@
 
 .btn {
     font-family: sans-serif;
-    padding: .5rem 1rem;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .nav-link:hover {
     color: white !important;
+}
+    
+
+.navbar {
+    padding: 12px;
 }

@@ -12,28 +12,33 @@ The contents in this project follow the following structure.
 │   └───images
 │
 └───src
-    ├──sections
-    │   ├───about
-    │   ├───faq
-    │   ├───footer
-    │   ├───landing
-    │   ├───schedule
-    │   ├───speakers
-    │   └───sponsors
-    │
+    ├──components
+    │   ├───Home
+    |   │   ├───Home.jsx
+    |   │   ├───home.css
+    │   |
+    |   |───About
+    |   |   ├───About.jsx
+    |   |   ├───about.css
+    |   |
+    │   ├───Contact
+    |   |   ├───Contact.jsx
+    |   |   ├───contact.css
     │
     └───shared_components
-        ├───button
-        └───sidebar
-```
+        ├───Navigation
+        |   ├───Navigation.jsx
+        |   ├───navigation.css
+        |
+        |───Footer
+        |   ├───Footer.jsx
+        |   ├───Footer.css 
+```     |   
+        └───Hero Section
+            ├───Hero.jsx
+            ├───Hero.css
 
-Each individual section and component, follows this structure
 
-```
-section
-  ├──components
-  └──styles
-```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
