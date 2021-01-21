@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import './Navigation.css';
-import logo from './logo.png'
+import logo from '../../Images-Videos-GIF/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -19,7 +19,7 @@ const Navigation = () => {
                     className="d-inline-block align-top"
                     style={{ padding: 1 } }
                 />{' '}
-                Chikkamagaluru.org
+                Chikkamagaluru
             </Navbar.Brand>
 
 
