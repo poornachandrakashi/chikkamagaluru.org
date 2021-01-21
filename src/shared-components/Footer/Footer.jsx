@@ -52,7 +52,7 @@ function Footer() {
               </ul>
             </div>
             <div className="col-md-6 item text">
-              <h3>Chikkamagaluru</h3>
+              <h3>Chikkamagaluru, Karnataka</h3>
               <p>
                 Located at the foothills of the Mullayanagiri range, and just
                 south of Baba Budangiris, Chikmagalur is famous for its forests,
