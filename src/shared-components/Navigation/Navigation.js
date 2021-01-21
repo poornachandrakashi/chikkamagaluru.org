@@ -1,38 +1,42 @@
 import React from 'react'
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from './logo.svg';
-import { Button } from 'react-bootstrap'
-import './Navigation.css'
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import './Navigation.css';
+import logo from './logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Navigation = () => {
+
     return (
-        <>
-            <Navbar collapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark'>
-                <Container className="custom-container">
-                    <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-                    <Navbar.Collapse id='responsive-navbar-nav'>
-                        <Nav>
-                            <Navbar.Brand href="./">
-                                <img
-                                    src={logo}
-                                    width="30"
-                                    height="30"
-                                    className="d-inline-block align-top"
-                                    alt="React Bootstrap logo"
-                                />  Chikkamagaluru
-                            </Navbar.Brand>
-                            <Nav.Link href='/' exact activeStyle> Home </Nav.Link>
-                            <Nav.Link href='/about' activeStyle> About </Nav.Link>
-                            <Nav.Link href='/services' activeStyle> Services </Nav.Link>
-                            <Nav.Link href='/contact' activeStyle> Contact  </Nav.Link>
-                            <Button href='/signin'>Sign In</Button>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </>
+        
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"  sticky="top">
+            <Navbar.Brand href="./">
+                <img
+                    alt=""
+                    src={logo}
+                    width="30"
+                    height="30"
+                    className="d-inline-block align-top"
+                    style={{ padding: 1 } }
+                />{' '}
+                Chikkamagaluru.org
+            </Navbar.Brand>
+
+
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+
+                <Nav className="ml-auto">
+                    <Nav.Link href="./"> Home</Nav.Link>
+                    <Nav.Link href="about">About</Nav.Link>
+                    <Nav.Link href="services">Services</Nav.Link>
+                    <Nav.Link href="contact">Contact Us</Nav.Link>
+                    <Button href="signin"> Sign In <FontAwesomeIcon icon={faSignInAlt}/></Button>
+                </Nav>
+
+            </Navbar.Collapse>
+        </Navbar>
     )
 }
 
 export default Navigation
-

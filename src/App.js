@@ -26,8 +26,9 @@ function App() {
         <Route exact path="/"  component={() => <Home />} />
         <Route path="/about" exact component={() => <About />} />
         <Route path="/contact" exact component={() => <Contact />} />
-        <Route path="/services" exact component={() => <Contact />} />
-        <Route path="/signin" exact component={() => <Contact />} />
+        <Route path="/services" exact component={() => <Home />} />
+        <Route path="/contact" exact component={() => <Home />} />
+        <Route path="/signin" exact component={() => <Home />} />
         <Redirect from="*" to="/" />
       </Switch>
       <Footer />
