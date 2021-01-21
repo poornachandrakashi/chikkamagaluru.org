@@ -1,6 +1,11 @@
 import React from "react";
 import "./Footer.css";
-import { AiFillFacebook,AiOutlineTwitter,AiFillInstagram } from "react-icons/ai";
+import logo from "./logo.png";
+import {
+  AiFillFacebook,
+  AiOutlineTwitter,
+  AiFillInstagram,
+} from "react-icons/ai";
 
 function Footer() {
   return (
@@ -52,7 +57,17 @@ function Footer() {
               </ul>
             </div>
             <div className="col-md-6 item text">
-              <h3>Chikkamagaluru, Karnataka</h3>
+              <h3>
+                <img
+                  alt=""
+                  src={logo}
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                  style={{ padding: 1 }}
+                />{" "}
+                <span>Chikkamagaluru, Karnataka</span>
+              </h3>
               <p>
                 Located at the foothills of the Mullayanagiri range, and just
                 south of Baba Budangiris, Chikmagalur is famous for its forests,
@@ -63,19 +78,29 @@ function Footer() {
             </div>
             <div className="col item social">
               <a href="https://chikkamagaluru.org/">
-                <AiFillFacebook/>
+                <AiFillFacebook />
               </a>
               <a href="https://chikkamagaluru.org/">
-                <AiOutlineTwitter/>
+                <AiOutlineTwitter />
               </a>
               <a href="https://www.instagram.com/chikkamagaluru/">
-                <AiFillInstagram/>
+                <AiFillInstagram />
               </a>
             </div>
           </div>
           <p className="m-0 mt-4 text-center text-white">
             &copy; {new Date().getFullYear()} Copyright :{" "}
-            <a href="http://chikkamagaluru.org/"> chikkamagaluru.org </a>
+            <a href="http://chikkamagaluru.org/">
+              <img
+                alt=""
+                src={logo}
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+                style={{ padding: 1 }}
+              />{" "}
+              chikkamagaluru.org{" "}
+            </a>
           </p>
         </div>
       </footer>
