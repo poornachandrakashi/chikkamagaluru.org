@@ -32,7 +32,6 @@ const Navigation = () => {
 
                 <Nav className="ml-auto">
                     <Button variant="outline-primary" href="signin"> Sign In</Button>
-                    <br></br>
                     <Button href="signin"> Sign Up</Button>
                 </Nav>
 
