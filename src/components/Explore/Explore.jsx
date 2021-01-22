@@ -4,14 +4,16 @@ import { Container, Col, Row } from 'react-bootstrap'
 
 function Explore() {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <Map />
-        </Col>
-      </Row>
-
-    </Container>
+      <Container>
+        <Row className="top-margin">
+          
+        </Row>
+        <Row>
+          <Col>
+            <Map />
+          </Col>
+        </Row>
+      </Container>
   );
 }
 

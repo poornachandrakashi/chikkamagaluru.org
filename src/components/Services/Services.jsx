@@ -1,10 +1,11 @@
 import React from 'react'
+import {Container} from 'react-bootstrap'
 
 const Services = () => {
     return (
-        <div>
+        <Container className="top-margin">
             <h1>Services</h1>
-        </div>
+        </Container>
     )
 }
 

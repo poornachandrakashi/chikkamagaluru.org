@@ -8,9 +8,13 @@ import logo from '../../Images-Videos-GIF/logo.png'
 const Navigation = () => {
     const location = useLocation();
     console.log(location.pathname);
+    const currentpath = location.pathname;
+
     return (
-        // {`${location.pathname === "./" ? "dark" : "dark"}`}
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+               
+        <Navbar collapseOnSelect expand="lg" bg={`${location.pathname === "/" ? "trans" : "dark"}`} variant="dark" fixed="top"
+        className="fixed"
+        >
             <Navbar.Brand href="./">
                 <img
                     alt=""

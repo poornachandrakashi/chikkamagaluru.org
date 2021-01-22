@@ -35,22 +35,17 @@
     padding: 12px;
 }
 
-@media (max-width : 990px) {
+@media (max-width : 991px) {
     .btn {
         margin-bottom: 5px;
         margin-top: 5px;
     }
-}
-
-
-@media (min-width: 800px) and (max-width: 850px) {
-    .navbar:not(.top-nav-collapse) {
-        background: #1C2331!important;
+    .bg-trans {
+        background-color: #1C2331 !important;
     }
 }
 
-@media only screen and (max-width:768px){
-    .navbar{background-color:#1C2331}} 
+
 /* 
 @media (min-width: 800px) and (max-width: 850px) {
     .navbar:not(.top-nav-collapse) {
