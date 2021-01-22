@@ -1,6 +1,6 @@
 import React from "react";
 
-function About() {
+function Explore() {
   return (
     <div className="about">
       <div class="container">
@@ -13,7 +13,7 @@ function About() {
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-light">About</h1>
+            <h1 class="font-weight-light">Explore</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -27,4 +27,4 @@ function About() {
   );
 }
 
-export default About;
+export default Explore;
