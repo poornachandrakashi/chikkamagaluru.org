@@ -9,6 +9,7 @@ import {
 import { index } from "../../variables/content";
 
 function Footer() {
+  //renders items of each heading of the navigation section in footer
   function navListItemsRender(head){
     return head.map((items)=>(
         <li>
@@ -16,6 +17,7 @@ function Footer() {
         </li>
     ));
   }
+  //renders heading components of the navigation section in footer
   const navListHeads = index.footer.navigation.map((nav) => (
     <div className="col-sm-2 col-md-2 item">
       <h3>{nav.head}</h3>

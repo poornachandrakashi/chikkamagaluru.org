@@ -9,7 +9,8 @@ import Footer from './shared-components/Footer/Footer'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
-
+import CardsPage from './layouts/Cards-Page/cardsPage' 
+import CardsDetailPage from './layouts/Cards-Page/cardDetailPage' 
 
 import {
   BrowserRouter as Router,
@@ -28,6 +29,8 @@ function App() {
         <Route path="/contact" exact component={() => <Contact />} />
         <Route path="/services" exact component={() => <Home />} />
         <Route path="/contact" exact component={() => <Home />} />
+        <Route path="/blog" exact component={() => <CardsPage />} />
+        <Route path="/blog-detail" exact component={() => <CardsDetailPage />} />
         <Route path="/signin" exact component={() => <Home />} />
         <Redirect from="*" to="/" />
       </Switch>
