@@ -2,10 +2,6 @@ import React from 'react'
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import './Navigation.css';
 import logo from '../../Images-Videos-GIF/logo.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
-
-
 
 const Navigation = () => {
 
@@ -21,7 +17,7 @@ const Navigation = () => {
                     className="d-inline-block align-top"
                     style={{ padding: 1 }}
                 />{' '}
-                    Chikkamagaluru
+                    {/* Chikkamagaluru */}
             </Navbar.Brand>
 
 
@@ -35,8 +31,8 @@ const Navigation = () => {
                 </Nav>
 
                 <Nav className="ml-auto">
-                    
                     <Button variant="outline-primary" href="signin"> Sign In</Button>
+                    <br></br>
                     <Button href="signin"> Sign Up</Button>
                 </Nav>
 
