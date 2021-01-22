@@ -33,12 +33,12 @@ The contents in this project follow the following structure.
         |───Footer
         |   ├───Footer.jsx
         |   ├───Footer.css 
-```     |   
+        |   
         └───Hero Section
             ├───Hero.jsx
             ├───Hero.css
 
-
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
