@@ -1,7 +1,7 @@
 header {
     position: relative;
     background-color: black;
-    height: 88vh;
+    height: 100vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
@@ -39,10 +39,10 @@ header {
   }
   
   @media (pointer: coarse) and (hover: none) {
-    header {
+    /* header {
       background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
     }
     header video {
       display: none;
-    }
+    } */
   }

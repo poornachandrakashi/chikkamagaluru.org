@@ -1,7 +1,12 @@
-    
+
 .bg-trans {
     background-color: transparent !important;
 }
+
+.navbar-active {
+    background-color: #1C2331!important;
+}
+
 
 
 .navbar-inner {

@@ -1,20 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Navbar, Nav, Button } from 'react-bootstrap'
-import './navigation.css'
+import './navigation.css' 
 import logo from '../../Images-Videos-GIF/logo.png'
 
 
 const Navigation = () => {
+
     const location = useLocation();
     console.log(location.pathname);
-    const currentpath = location.pathname;
+
+    const [navbar, setnavbar] = useState(false);
+
+
+    const changeNavbarBackground = () => {
+        console.log(window.scrollY);
+        if (window.scrollY >400 ) {
+            setnavbar(true);
+        }else {
+            setnavbar(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeNavbarBackground);
 
     return (
-               
-        <Navbar collapseOnSelect expand="lg" bg={`${location.pathname === "/" ? "trans" : "dark"}`} variant="dark" fixed="top"
-        className="fixed"
-        >
+
+        <Navbar collapseOnSelect expand="lg" bg={`${location.pathname === "/" ? "trans" : "dark"} ${navbar ? "navbar-active" : ""}`} variant="dark" fixed="top" >
             <Navbar.Brand href="./">
                 <img
                     alt=""
@@ -24,7 +36,7 @@ const Navigation = () => {
                     className="d-inline-block align-top"
                     style={{ padding: 1 }}
                 />{' '}
-                    {/* Chikkamagaluru */}
+                {/* Chikkamagaluru */}
             </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -42,7 +54,7 @@ const Navigation = () => {
                 </Nav>
 
             </Navbar.Collapse>
-        </Navbar>
+        </Navbar >
     )
 }
 
