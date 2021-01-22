@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Display a popup on hover</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />
+<style>
+	body { margin: 0; padding: 0; }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<style>
+    .mapboxgl-popup {
+        max-width: 400px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+</style>
+<div id="map"></div>
+<script>
+	// TO MAKE THE MAP APPEAR YOU MUST
+	// ADD YOUR ACCESS TOKEN FROM
+	// https://account.mapbox.com
+	mapboxgl.accessToken = 'pk.eyJ1IjoicG9vcm5hY2hhbmRyYSIsImEiOiJja2s1Zzh5eDUwNjQ4Mm9xdjUzZzBtcXBkIn0.ZN1pQNlBFK9dL4zfQZXTyA';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+    // satellite-v9?\\\
+        center: [ 75.7720,13.3161],
+        zoom: 9.15
+    });
+
+    map.on('load', function () {
+        map.loadImage(
+            'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png',
+            // Add an image to use as a custom marker
+            function (error, image) {
+                if (error) throw error;
+                map.addImage('custom-marker', image);
+
+                map.addSource('places', {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'FeatureCollection',
+                        'features': [
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Kudremukh National Park</strong><p>The park consists of 600 km² of undulating mountains and tropical wet evergreen forest. It began its existence as a Reserved Forest in 1916, and was designated a national park in 1987. Kudremukh means horse face, and is in reference to the appearance of a mountain peak located within the park.</p>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [75.2508, 13.2226]
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Mullayanagiri Peak</strong><p>Mullayanagiri is the highest peak in Karnataka, India. Ranges of the Western Ghats of Chikkamagaluru Taluk. With a height of 1,930 metres, it is the highest peak in Karnataka. The summit of Mullayanagiri houses a police radio relay station.</p>  <img src="mullaya.jpeg" style= width:150px>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [ 75.72132953909887,13.391092789708598]
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Hebbe Falls</strong><p>Hebbe Falls are yet another picturesque chikmagalur tourist places. The falls are accessed from Kemmangundi hill station. It is located 8 km from this hill station. The falls are surrounded by astonishing greenery. Dense forests, thick foliage, rich flora and hills encompass this region. Coffee plantations are sprawled across the expanses around the falls. </p> <img src="hebbe.jpg" style= width:150px>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [75.72528257693754,13.541712818607532]
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Baba Budangiri</strong><p>Also known as the Chandra Drona Parvatha, Datta Peeta has several high mountain rises. Located in the Baba Budan Giri range, this is a popular tourist destination. The mountain is named after the Muslim saint Baba Budan.  The Baba Budangiri range is very prominent in places to see in Chikmagalur. It is a picturesque destination with rich sightseeing attractions. Mullayanagiri is the highest peak in this region. This place rises to a peak of about 1900 metres.</p>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [ 75.77030180227892,13.423908033159956]
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        "<strong>Kallathigiri Falls</strong><p>The Kalhatti Falls is where nature wraps you in its charm. Over here you experience the elements of nature as pure, refreshing and charming as they come. The magnetism of this waterfall is evident when you see it at close quarters. The surrounding regions of the falls are revitalizing. It makes for a refreshing round of nature walks. There is so much possible here and it is one of the best places to visit in Chikmagalur.</p>"
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [75.78215403349378,13.536584781673302]
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Bhadra Wildlife Sanctuary</strong><p>A protected area and Project Tiger area, this wildlife sanctuary is home to a number of wild animals and birds. The flora and fauna that you find here is exotic and worth watching. Every minute at the Bhadra Wildlife Sanctuary is value for time and money and it is one of the best Chikmagalur tourist places. The sanctuary is located between the Chikmagalur and Shimoga districts. It is about 35 km from Chikmagalur town. </p>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [75.63528064978782,13.69543666744646]
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Bhadra Dam</strong><p>A major landmark in Chikmagalur, Karnataka is the Bhadra Dam built on the river Bhadra, a tributary of the famous Tungabhadra River. The dam became more powerful after people in the region started using the water for irrigation purpose as well as producing electricity to the towns and the villages nearby. The dam was commissioned in 1965. The river originates at Samse in the mighty Western Ghats and then it starts flowing towards east across the Deccan Plateau and it is one of the finest places to see in Chikmagalur.   </p>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [75.63657572632201,13.701366800154188] 
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        "<strong>Hanumana Gundi Falls</strong><p>Famed as one of the major attractions in Chikmagalur the Hanumana Gundi Falls gives a perfect dose of nature. The fall cascades down from an elevation of 22 meters above the ground and is settled at an altitude of 996 meters. If you are looking for a spot for rejuvenation then this is the best place for you.</p>"
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [ 75.1553409867661,13.26978642659691]
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Kyathanamakki</strong><p>A thrilling off-roading experience through the rolling, lush hills of Kyatanamakki is a must-do activity for adrenaline junkies across the country. The landscape dotted by numerous streams, waterfalls and dramatic peaks veiled by thick clouds makes it one of the most beautiful places to see in Chikmagalur.</p>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [75.3025218573953,13.277372707429738]
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Madu Gundi Falls</strong><p>Madu Gundi Falls lies in a quaint corner of Dakshina Kannada, tucked away in a scenic spot of the Western Ghats. You can plan a day trip to the waterfalls, driving through the breathtakingly beautiful landscape to reach the waterfalls. The drive is as beautiful as the destination and offers many opportunities for off-roading, nature photography and quick stops for a picnic spread and it is one of the best Chikmagalur tourist spots.   </p>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-77.007481, 38.876516]
+                                }
+                            },{
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Sharadamba Temple</strong><p>The Sharadamba Temple is located in Shringeri which is a town in Chikmagalur district. Adi Shankaracharya, the famous Hindu practitioner set up his practice at this place. Located on the banks of the Tungabhadra River, the Sharadamba Temple dates back to as early as the 8th century. The temple is dedicated to the goddess of wisdom. Praying to the goddess is said to improve one’s learning capacity. The young and the old visit this temple to offer their prayers and it is one of the best places to visit in Chikmagalur.</p>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [75.25133291471757,13.416351394527382]
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Kemmangundi</strong><p>This hill station is located in the Tarikere Taluk. The hill station is situated at an elevation of about 1400 metres. Also known as the Sri Krishnarajendra Hill Station, Kemmangundi was frequented by kings as a summer retreat centre. Krishnaraja Wodeyar IV started this trend during his time of visiting this place in the summers. When Krishnaraja Wodeyar IV first came here, he was awestruck at the magnificent Baba Budan Hills in the backdrop and it is one of the amazing places to see in Chikmagalur.</p>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [75.7500000272863,13.55083386702213]
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description':
+                                        '<strong>Manikyadhara Falls</strong><p>Located in the vicinity of the Baba Budan Giri Hills, Manikyadhara Falls are a highly frequented tourist place. The waterfall is an idyllic location to spend quality time with your family. All around this region, there are impressive trekking trails. Open grounds present the opportunity to camp as well. The waterfalls are located in the Shola Forest. It is a perennial water cascade. At all times of the year, you can see waterfalls here. Beautiful surroundings and greenery characterise this place.</p>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [-77.007481, 38.876516]
+                                }
+                            }
+
+                        ]
+                    }
+                });
+
+                // Add a layer showing the places.
+                map.addLayer({
+                    'id': 'places',
+                    'type': 'symbol',
+                    'source': 'places',
+                    'layout': {
+                        'icon-image': 'custom-marker',
+                        'icon-allow-overlap': true
+                    }
+                });
+            }
+        );
+
+        // Create a popup, but don't add it to the map yet.
+        var popup = new mapboxgl.Popup({
+            closeButton: false,
+            closeOnClick: false
+        });
+
+        map.on('mouseenter', 'places', function (e) {
+            // Change the cursor style as a UI indicator.
+            map.getCanvas().style.cursor = 'pointer';
+
+            var coordinates = e.features[0].geometry.coordinates.slice();
+            var description = e.features[0].properties.description;
+
+            // Ensure that if the map is zoomed out such that multiple
+            // copies of the feature are visible, the popup appears
+            // over the copy being pointed to.
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+
+            // Populate the popup and set its coordinates
+            // based on the feature found.
+            popup.setLngLat(coordinates).setHTML(description).addTo(map);
+        });
+
+        map.on('mouseleave', 'places', function () {
+            map.getCanvas().style.cursor = '';
+            popup.remove();
+        });
+    });
+</script>
+
+</body>
+</html>
