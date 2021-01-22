@@ -2,7 +2,9 @@
 import './App.css';
 
 // Importing Shared Components
-import Navigation  from './shared-components/Navigation/Navigation'
+// import Navigation  from './shared-components/Navigation/Navigation'
+
+import Navigation  from './shared-components/Transparent Navbar/Navigation'
 import Footer from './shared-components/Footer/Footer'
 
 // Importing Components
