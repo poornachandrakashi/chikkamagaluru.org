@@ -1,15 +1,15 @@
 .navbar-nav {
-    padding-left:30px;
-    padding-right:30px;
-
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .nav-link {
     font-family: sans-serif;
     margin-left: 5px;
     margin-right: 5px;
-
-  }
+    font-size: larger;
+    color: white !important;
+}
 
 .btn {
     font-family: sans-serif;
@@ -18,9 +18,8 @@
 }
 
 .nav-link:hover {
-    color: white !important;
+    color: whitesmoke !important;
 }
-    
 
 .navbar {
     padding: 12px;

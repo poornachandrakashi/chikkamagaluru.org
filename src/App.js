@@ -7,8 +7,10 @@ import Footer from './shared-components/Footer/Footer'
 
 // Importing Components
 import Home from './components/Home/Home'
-import About from './components/About/About'
+import Explore from './components/Explore/Explore'
 import Contact from './components/Contact/Contact'
+import Login from './components/Login/Login'
+
 
 
 import {
@@ -24,11 +26,11 @@ function App() {
       <Navigation />
       <Switch>
         <Route exact path="/"  component={() => <Home />} />
-        <Route path="/about" exact component={() => <About />} />
+        <Route path="/explore" exact component={() => <Explore />} />
         <Route path="/contact" exact component={() => <Contact />} />
         <Route path="/services" exact component={() => <Home />} />
         <Route path="/contact" exact component={() => <Home />} />
-        <Route path="/signin" exact component={() => <Home />} />
+        <Route path="/signin" exact component={() => <Login />} />
         <Redirect from="*" to="/" />
       </Switch>
       <Footer />
