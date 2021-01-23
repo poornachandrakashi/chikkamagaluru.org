@@ -31,12 +31,13 @@ function App() {
       <Switch>
         <Route exact path="/"  component={() => <Home />} />
         <Route path="/explore" exact component={() => <Explore />} />
-        <Route path="/contact" exact component={() => <Contact />} />
         <Route path="/services" exact component={() => <Services />} />
-        <Route path="/contact" exact component={() => <Home />} />
         <Route path="/blog" exact component={() => <CardsPage />} />
-        <Route path="/blog-detail" exact component={() => <CardsDetailPage />} />
+        <Route path="/contact" exact component={() => <Contact />} />
         <Route path="/signin" exact component={() => <Login />} />
+
+        {/* others */}
+        <Route path="/blog-detail" exact component={() => <CardsDetailPage />} />
         <Redirect from="*" to="/" />
       </Switch>
       <Footer />

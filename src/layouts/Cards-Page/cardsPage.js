@@ -13,7 +13,7 @@ import {
   CardTitle,
   CardSubtitle,
 } from "reactstrap";
-import Hero from "../../shared-components/Hero Section - Mobile Friendly/Hero";
+
 window.$tmp = {};
 class CardsPage extends React.Component {
   constructor(props) {
@@ -73,8 +73,7 @@ class CardsPage extends React.Component {
       );
     });
     return (
-      <div className="CardsPage">
-        <Hero />
+      <div className="CardsPage top-margin">
         <div className="container my-4">
           <Row>{cardItems}</Row>
         </div>
