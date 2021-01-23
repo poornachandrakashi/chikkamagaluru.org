@@ -3,7 +3,7 @@ import './Home.css'
 import { Button, Jumbotron } from 'react-bootstrap';
 import nature from '../../Images-Videos-GIF/nature.mp4'
 import coffee from '../../Images-Videos-GIF/coffee.mp4'
-import Hero from "../../shared-components/Hero Section - Video/Hero";
+import Hero from "../../shared-components/Hero Section - Mobile Friendly/Hero";
 
 function Home() {
   return (

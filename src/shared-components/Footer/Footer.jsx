@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from '../../Images-Videos-GIF/logo.png';
-
+import logo from "./logo.png";
 import {
   AiFillFacebook,
   AiOutlineTwitter,
