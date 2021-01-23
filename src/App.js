@@ -1,17 +1,22 @@
+// Importing CSS
 import './App.css';
 
 // Importing Shared Components
-//import Navigation  from './shared-components/Navigation/NewNavigation'
-import Navigation  from './shared-components/Navigation/Navigation'
+// import Navigation  from './shared-components/Navigation/Navigation'
+
+import Navigation  from './shared-components/Transparent Navbar/Navigation'
 import Footer from './shared-components/Footer/Footer'
 
 // Importing Components
 import Home from './components/Home/Home'
-import About from './components/About/About'
+import Explore from './components/Explore/Explore'
 import Contact from './components/Contact/Contact'
 import CardsPage from './layouts/Cards-Page/cardsPage' 
 import CardsDetailPage from './layouts/Cards-Page/cardDetailPage' 
+import Login from './components/Login/Login'
+import Services from './components/Services/Services'
 
+//Importing Router Components from React Router Dom
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,13 +30,13 @@ function App() {
       <Navigation />
       <Switch>
         <Route exact path="/"  component={() => <Home />} />
-        <Route path="/about" exact component={() => <About />} />
+        <Route path="/explore" exact component={() => <Explore />} />
         <Route path="/contact" exact component={() => <Contact />} />
-        <Route path="/services" exact component={() => <Home />} />
+        <Route path="/services" exact component={() => <Services />} />
         <Route path="/contact" exact component={() => <Home />} />
         <Route path="/blog" exact component={() => <CardsPage />} />
         <Route path="/blog-detail" exact component={() => <CardsDetailPage />} />
-        <Route path="/signin" exact component={() => <Home />} />
+        <Route path="/signin" exact component={() => <Login />} />
         <Redirect from="*" to="/" />
       </Switch>
       <Footer />

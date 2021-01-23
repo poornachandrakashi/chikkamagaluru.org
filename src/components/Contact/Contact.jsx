@@ -1,8 +1,9 @@
 import React from "react";
+import './contact.css'
 
 function Contact() {
   return (
-    <div className="contact">
+    <div className="contact top-margin">
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
